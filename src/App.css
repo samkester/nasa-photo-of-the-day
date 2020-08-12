@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+/* temporary CSS for day 1 */
+.content-box{
+  margin: 2% 5%;
+}
+
+.content-box h2{
+  margin: 2%;
+}
+
+.content-row{
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  width: 100%;
+  padding: 1%;
+}
+
+.content-row.left{
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.content-row.split{
+  justify-content: space-between;
+}
+
+.content-row.center{
+  justify-content: center;
+}
+
+.image-box{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.image-box img{
+  width: 50%;
+}
+
+.date-button-box{
+  margin-bottom: 2%;
+}
