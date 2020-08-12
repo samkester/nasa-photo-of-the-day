@@ -3,15 +3,15 @@
 import React from "react";
 
 export default function(props){
-    const {setTargetDate, remaining} = props;
+    const {setTargetDate/*, remaining*/} = props;
 
     const wrappedSetTargetDate = (event) => {
-        setTargetDate(event.target.PreviousSibling.value);
+        setTargetDate(event.currentTarget.previousSibling.value);
     }
 
     return(
         <div className="date-button-box">
-            {remaining <= 0 && <p>Reached API limit, try again later.</p>}
+            {/*remaining <= 0 && <p>Reached API limit, try again later.</p>*/}
             <input type="text"
                 placeholder="Enter a date in YYYY-MM-DD format">
             </input>
