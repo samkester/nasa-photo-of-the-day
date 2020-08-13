@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import "./App.css";
+//import "./App.css";
 import axios from "axios";
 import ContentBox from "./components/ContentBox";
 import DateButton from "./components/DateButton";
@@ -43,7 +43,7 @@ function App() {
   },[targetDate]);
 
   return (
-    <div className="App">
+    <div>
       <ContentBox data={APIResponse.data} />
       <DateButton setTargetDate={setTargetDate} />
     </div>
